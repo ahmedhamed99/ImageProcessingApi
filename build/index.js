@@ -13,9 +13,6 @@ const app = (0, express_1.default)();
 const port = process.env.PORT;
 // Use middleware to connect routes to the app
 app.use('/api', routes_1.default);
-app.get('/', (req, res) => {
-    res.send('hey');
-});
 // Running the server on the specified port
 app.listen(port, () => {
     console.log(`⚡️[server]: Server is running at https://localhost:${port}`);

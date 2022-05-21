@@ -34,7 +34,6 @@ describe('Test endpoint responses', () => {
     }));
     it('check it dislplaye Error: Input file is missing: assets/full/jord.jpg when given wrong file name', () => __awaiter(void 0, void 0, void 0, function* () {
         const response = yield request.get('/api/images?filename=jord&width=200&height=300');
-        console.log(response.text);
         expect(response.text).toBe('Input file is missing: assets/full/jord.jpg');
     }));
 });
